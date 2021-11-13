@@ -1,6 +1,10 @@
-
-      - name: Run Tests
-        run: |
+name: '.Net Unit Test'
+description: 'Run all unit test files that end with '*.Tests.dll' in the repository'
+inputs:
+outputs:
+runs:
+  steps:
+        - run: |
           $files = @() 
           Get-ChildItem -Path ${{ github.workspace }} -Recurse -Filter "*.Tests.dll" | Where-Object {$_.Directory.FullName.Contains("\bin\Release")} | ForEach-Object {$files+=$_.Directory.FullName+"\"+$_.Name} 
           
