@@ -1,4 +1,4 @@
-<h3 align="center">Run All .net Unt Test</h3>
+<h3 align="center">Run All .Net Unit Test</h3>
 <p align="center">This is an action to run all unit test files that end with '*.Tests.dll' in the repository.<p>
 
 ## Usage
