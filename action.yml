@@ -19,7 +19,7 @@ runs:
           {
           echo "No unit tests have been detected."
           } else {
-          & vstest.console.exe $files
+          & vstest.console.exe $files /EnableCodeCoverage  /ResultsDirectory:${{ github.workspace }}\TestResults
           }
           
            shell: powershell
