@@ -22,4 +22,3 @@ runs:
           & vstest.console.exe $files /EnableCodeCoverage  /ResultsDirectory:${{ github.workspace }}\TestResults
           }
           
-           shell: powershell
